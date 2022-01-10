@@ -2,13 +2,15 @@ import React from 'react';
 import {Container} from "react-bootstrap";
 import {Parallax} from "react-parallax";
 import BgBanner from '../../assets/imgs/bgBanner.webp';
+import {SiDiscord} from "react-icons/all";
+import HeaderComp from "../header/HeaderComp";
 
 import './BannerComp.scss';
-import {SiDiscord} from "react-icons/all";
 
 const BannerComp = () => {
   return (
     <Parallax bgImage={BgBanner} strength={500} className="banner-comp">
+      <HeaderComp/>
       <Container fluid className="banner-comp-container d-flex flex-column justify-content-center align-items-center">
         <div className="banner-comp-title">
           <h1 className="title">Welcome to <span>SSS NFT!</span> Original</h1>
