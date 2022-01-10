@@ -4,7 +4,7 @@ import Logo from '../../assets/imgs/logo.png';
 
 import './HeaderComp.scss';
 
-const HeaderComp = () => {
+const HeaderComp = ({connectWallet}) => {
   return (
     <Navbar collapseOnSelect expand="lg" className="header-comp">
       <Container className="header-comp-container">
@@ -30,7 +30,7 @@ const HeaderComp = () => {
             <Nav.Link href="#faq" className="menu-item">faq's</Nav.Link>
           </Nav>
           <Nav className="header-comp-button d-flex justify-content-center align-items-center">
-            <button className="connect-wallet-button">Select wallet</button>
+            <button onClick={connectWallet} className="connect-wallet-button">Select wallet</button>
           </Nav>
         </Navbar.Collapse>
       </Container>

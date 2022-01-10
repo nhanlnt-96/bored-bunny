@@ -2,6 +2,9 @@
 
 .banner-comp {
   min-height: 100vh;
+  @include mobile {
+    padding-bottom: 24px;
+  }
 
   .react-parallax-bgimage {
     top: -20%;
@@ -35,32 +38,15 @@
       font-size: 45px;
     }
   }
+}
 
-  &-btn {
-    margin-top: 24px;
+.banner-comp-container .mint-connected {
+  width: 100%;
 
-    .button-item {
-      background-color: #F5BC58;
-      padding: 20px;
-      border: none;
-      outline: none;
-      border-radius: 35px;
-      font-size: 18px;
-      color: #000;
-
-      svg {
-        margin-right: 12px;
-        font-size: 25px;
-      }
-
-      &:hover {
-        background-color: #ffffff;
-        color: #F5BC58;
-
-        svg {
-          color: #F5BC58;
-        }
-      }
+  &-container {
+    width: 60%;
+    @include mobile {
+      width: 100%;
     }
   }
 }
