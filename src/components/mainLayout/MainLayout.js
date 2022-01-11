@@ -3,6 +3,7 @@ import {Container, Row} from "react-bootstrap";
 import BannerComp from "../banner/BannerComp";
 import './MainLayout.scss';
 import WelcomeComp from "../welcome/WelcomeComp";
+import IntroducingComp from "../introducing/IntroducingComp";
 
 const MainLayout = () => {
   return (
@@ -12,6 +13,9 @@ const MainLayout = () => {
       </Row>
       <Row id="welcome">
         <WelcomeComp/>
+      </Row>
+      <Row id="introducing">
+        <IntroducingComp/>
       </Row>
     </Container>
   );

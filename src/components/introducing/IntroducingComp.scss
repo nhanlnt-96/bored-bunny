@@ -1,0 +1,64 @@
+@import "../../styles/rwd";
+
+.introducing-comp {
+  background-color: rgb(255, 189, 89);
+
+  &-container, &-content {
+    height: 100%;
+  }
+}
+
+.introducing-comp-container .introducing-comp-left img {
+  width: 100%;
+}
+
+.introducing-comp-container .introducing-comp-right {
+  .content {
+    &-title, &-subtitle, &-text {
+      color: rgb(48, 51, 75);
+    }
+
+    &-subtitle {
+      font-size: 60px;
+    }
+
+    &-title {
+      font-size: 72px;
+      margin-top: 12px;
+    }
+
+    &-text .desc {
+      font-size: 30px;
+      margin-top: 12px;
+
+      &:last-child {
+        margin-top: 24px;
+      }
+    }
+  }
+
+  @include mobile {
+    margin-top: 24px;
+    .content-title {
+      font-size: 55px;
+    }
+    .content-subtitle {
+      font-size: 40px;
+    }
+    .content-text .desc {
+      font-size: 25px;
+    }
+  }
+  @include tablet {
+    .content-title {
+      font-size: 55px;
+    }
+    .content-subtitle {
+      font-size: 40px;
+    }
+    .content-text .desc {
+      font-size: 25px;
+    }
+  }
+}
+
