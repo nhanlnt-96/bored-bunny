@@ -4,6 +4,7 @@ import BannerComp from "../banner/BannerComp";
 import './MainLayout.scss';
 import WelcomeComp from "../welcome/WelcomeComp";
 import IntroducingComp from "../introducing/IntroducingComp";
+import TeamComp from "../team/TeamComp";
 
 const MainLayout = () => {
   return (
@@ -16,6 +17,9 @@ const MainLayout = () => {
       </Row>
       <Row id="introducing">
         <IntroducingComp/>
+      </Row>
+      <Row id="team">
+        <TeamComp/>
       </Row>
     </Container>
   );
