@@ -1,0 +1,50 @@
+@import "../../styles/rwd";
+
+.roadmap-comp {
+  background-color: rgb(255, 189, 89);
+
+  &-container {
+    height: 100%;
+  }
+}
+
+.roadmap-comp-container .roadmap-comp-title {
+  .title, .sub-title {
+    color: rgb(48, 51, 75)
+  }
+
+  .title {
+    font-size: 72px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+
+  .sub-title {
+    font-size: 23px;
+    margin-top: 12px;
+    text-align: center;
+    @include mobile {
+      font-size: 20px;
+    }
+  }
+}
+
+.roadmap-comp-container .roadmap-comp-content .roadmap-comp-box {
+  background-color: rgb(48, 51, 75);
+  padding: 20px;
+  margin-top: 24px;
+
+  .roadmap-content {
+    color: #ffffff;
+    font-size: 25px;
+
+    &:not(:first-child) {
+      margin-top: 24px;
+    }
+  }
+
+  .roadmap-title {
+    color: rgb(73, 220, 189);
+  }
+}

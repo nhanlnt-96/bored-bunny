@@ -5,6 +5,7 @@ import './MainLayout.scss';
 import WelcomeComp from "../welcome/WelcomeComp";
 import IntroducingComp from "../introducing/IntroducingComp";
 import TeamComp from "../team/TeamComp";
+import RoadmapComp from "../roadmap/RoadmapComp";
 
 const MainLayout = () => {
   return (
@@ -20,6 +21,9 @@ const MainLayout = () => {
       </Row>
       <Row id="team">
         <TeamComp/>
+      </Row>
+      <Row id="roadmap">
+        <RoadmapComp/>
       </Row>
     </Container>
   );
