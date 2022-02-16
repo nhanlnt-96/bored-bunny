@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import {Container} from "react-bootstrap";
 import {Parallax} from "react-parallax";
-import BgBanner from "../../assets/imgs/bgBanner.webp";
+import BgBanner from "../../assets/imgs/ape.png";
 import {SiDiscord} from "react-icons/all";
 import HeaderComp from "../header/HeaderComp";
 import {useDispatch, useSelector} from "react-redux";
