@@ -1,16 +1,17 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState} from "react";
 import {Container} from "react-bootstrap";
 import {Parallax} from "react-parallax";
-import BgBanner from '../../assets/imgs/bgBanner.webp';
+import BgBanner from "../../assets/imgs/bgBanner.webp";
 import {SiDiscord} from "react-icons/all";
 import HeaderComp from "../header/HeaderComp";
 import {useDispatch, useSelector} from "react-redux";
 import {fetchData} from "../../redux/data/dataActions";
 import * as s from "../../styles/globalStyles";
 import {connect} from "../../redux/blockchain/blockchainActions";
-import {ResponsiveWrapper, StyledButton, StyledImg, StyledLink, StyledRoundButton, truncate} from "./styleComponent";
+import {ResponsiveWrapper, StyledButton, StyledLink, StyledRoundButton, truncate} from "./styleComponent";
+import {ToastNoti} from "./components";
 
-import './BannerComp.scss';
+import "./BannerComp.scss";
 
 const BannerComp = () => {
   const dispatch = useDispatch();
@@ -115,14 +116,15 @@ const BannerComp = () => {
     e.preventDefault();
     dispatch(connect());
     getData();
-  }
+  };
   return (
     <Parallax bgImage={BgBanner} strength={500} className="banner-comp">
       <HeaderComp connectWallet={onConnectWalletBtnClick}/>
       <Container fluid className="banner-comp-container d-flex flex-column justify-content-center align-items-center">
         <div data-aos="fade-up" className="banner-comp-title">
-          <h1 className="title">Welcome to <span>SSS NFT!</span> Original</h1>
-          <h1 className="title">hight quality NFTS</h1>
+          <h1 className="title">Welcome to <span>The Samurai Society!</span></h1>
+          <h1 className="title">Which team will you join?</h1>
+          <h1 className="title">Team Earth or Team Kepler</h1>
         </div>
         {
           blockchain.account && (
@@ -163,12 +165,18 @@ const BannerComp = () => {
                     {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
                       <>
                         <s.TextTitle
-                          style={{textAlign: "center", color: "var(--accent-text)"}}
+                          style={{
+                            textAlign: "center",
+                            color: "var(--accent-text)"
+                          }}
                         >
                           The sale has ended.
                         </s.TextTitle>
                         <s.TextDescription
-                          style={{textAlign: "center", color: "var(--accent-text)"}}
+                          style={{
+                            textAlign: "center",
+                            color: "var(--accent-text)"
+                          }}
                         >
                           You can still find {CONFIG.NFT_NAME} on
                         </s.TextDescription>
@@ -180,14 +188,20 @@ const BannerComp = () => {
                     ) : (
                       <>
                         <s.TextTitle
-                          style={{textAlign: "center", color: "var(--accent-text)"}}
+                          style={{
+                            textAlign: "center",
+                            color: "var(--accent-text)"
+                          }}
                         >
                           1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
                           {CONFIG.NETWORK.SYMBOL}.
                         </s.TextTitle>
                         <s.SpacerXSmall/>
                         <s.TextDescription
-                          style={{textAlign: "center", color: "var(--accent-text)"}}
+                          style={{
+                            textAlign: "center",
+                            color: "var(--accent-text)"
+                          }}
                         >
                           Excluding gas fees.
                         </s.TextDescription>
@@ -289,8 +303,8 @@ const BannerComp = () => {
           </button>
         </div>
       </Container>
+      <ToastNoti errorMsg={blockchain.errorMsg}/>
     </Parallax>
-  
   );
 };
 

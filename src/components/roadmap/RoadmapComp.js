@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 import {Container, Row} from "react-bootstrap";
-import {roadmapDataPart1, roadmapDataPart2} from "../../configs/roadmapData";
+import {roadmapData} from "../../configs/roadmapData";
 
-import './RoadmapComp.scss';
+import "./RoadmapComp.scss";
 
 const RoadmapComp = () => {
   return (
@@ -10,26 +10,16 @@ const RoadmapComp = () => {
       <Container className="roadmap-comp-container">
         <Row className="roadmap-comp-title">
           <h6 data-aos="fade-down" className="title">utility road map</h6>
-          <p data-aos="fade-up" className="sub-title">Introduction: Our Goal in this project is to make our investors
-            and hodlers very
-            happy with there returns, we want to make a positive impact on society and most importantly the
-            metaverse.</p>
+          <p data-aos="fade-up" className="sub-title">Introduction: Our goal with this project is to make our investors
+            and hodlers very happy with their returns, we want to make a positive impact on society and most importantly
+            the metaverse.</p>
         </Row>
         <Row className="roadmap-comp-content">
           <div className="roadmap-comp-box">
             {
-              roadmapDataPart1.map((val, index) => (
-                <p data-aos="fade-up" className="roadmap-content">
-                  <span className="roadmap-title">{val.title}</span>{' '} {val.content}
-                </p>
-              ))
-            }
-          </div>
-          <div className="roadmap-comp-box">
-            {
-              roadmapDataPart2.map((val, index) => (
-                <p data-aos="fade-up" className="roadmap-content">
-                  <span className="roadmap-title">{val.title}</span>{' '} {val.content}
+              roadmapData.map((val, index) => (
+                <p key={index} data-aos="fade-up" className="roadmap-content">
+                  <span className="roadmap-title">{val.title}</span>{" "} {val.content}
                 </p>
               ))
             }

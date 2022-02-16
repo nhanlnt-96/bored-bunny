@@ -13,8 +13,7 @@
 
   &-container {
     min-height: calc(100vh - 128px);
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding: 24px 0 !important;
     @include mobile {
       min-height: calc(100vh - 126.73px);
     }

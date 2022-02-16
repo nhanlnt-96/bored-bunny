@@ -1,20 +1,21 @@
 export const faqData = [
   {
-    question: "Why invest in SSS:",
-    answer: "We are the future in the metaverse and with our amazing project investors are expecting a return of" +
-      " 10x-20x, we plan to grow and revolutionize gaming as we know it. with all our goals set we will grow and expand and make this a NFT project to remember for generations."
+    question: "Where will I be able to see my samurai society NFT?",
+    answer: ["Once you have minted a samurai you will be able to view it on Opensea by connecting your metamask."]
   },
   {
-    question: "Where I will be able to see my secret samurai society NFT?",
-    answer: "Once you have minted a secret samurai society NFT, you will be able to see it by connecting your wallet to OpenSea."
-  },
-  {
-    question: "When is the official launch:",
-    answer: "Welcome to our exclusive secret samurai society, our first collection will include 4,995 unique NFTS" +
-      " which will be launched February 22, 2022. at 2:22pm EST."
+    question: "When is the official launch?",
+    answer: ["The official launch will be estimated in March stay tuned on instagram/twitter/discord for further updates."]
   },
   {
     question: "What will be the price?",
-    answer: "The price of minting will be .2 ETH plus gas fees"
+    answer: [
+      "For our exclusive private sale it will be .2 eth + gas fees.", "For our public sale it will be .3 eth + gas" +
+      "  fees."
+    ]
   },
-]
+  {
+    question: "How do I join the private sale?",
+    answer: ["To join the private sale you have to be active in our discord group and you will be automatically joined in our private sale."]
+  },
+];

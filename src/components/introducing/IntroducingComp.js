@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 import {Col, Container, Row} from "react-bootstrap";
-import IntroducingImg from '../../assets/imgs/introducingImg.webp';
+import IntroducingImg from "../../assets/imgs/introducingImg.webp";
 
-import './IntroducingComp.scss';
+import "./IntroducingComp.scss";
 
 const IntroducingComp = () => {
   return (
@@ -21,15 +21,16 @@ const IntroducingComp = () => {
                 <h6 data-aos="fade-up" className="content-title">SAMURAI SOCIETY</h6>
               </div>
               <div className="content-text">
-                <p data-aos="fade-up" className="desc">We plan to launch a limited amount of NFTS, expand into our own
-                  cryptocurrency in
-                  which one will be a government token for our future game set to be launched in Q4 2022, and one coin
-                  in which holds the investment and the future of our project which will be announced soon, and finally
-                  launch our own game which will be in the metaverse, which will also be compatible with IOS and other
-                  platforms (TBA).</p>
-                <p data-aos="fade-up" className="desc">Entering into the samurai society Community means joining a
-                  family full of investors
-                  and nft enthusiasts who believe in the future of Cryptocurrencies and the blockchain technology.</p>
+                <p data-aos="fade-up" className="desc">Year 3088 after many years of wars the world has agreed to
+                  dismantle all arms and learn the way of the samurai to defend and attack any opposing threat. Our
+                  planet is under attack from martian aliens from exoplanet Kepler, they have advanced AI robots and
+                  plan on attacking and destroying humans and aliens to claim earth is their own. Humans and animals
+                  have evolved and learned advanced fighting skills in preparation and plan to defend themselves from
+                  the aliens and robots. Which force will you join and choose wisely otherwise you won't have a home
+                  planet! #teamearth or #teamkepler</p>
+                <p data-aos="fade-up" className="desc">Entering into the realm of the samurai means joining a family
+                  full of investors and NFT enthusiasts who believe in the future of cryptocurrencies and blockchain
+                  technology.</p>
               </div>
             </div>
           </Col>

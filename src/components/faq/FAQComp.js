@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 import {Container, Row} from "react-bootstrap";
 import {faqData} from "../../configs/faqData";
-import EmailIcon from '../../assets/icons/email.png';
-import MessageIcon from '../../assets/icons/message.png';
+import EmailIcon from "../../assets/icons/email.png";
+import MessageIcon from "../../assets/icons/message.png";
 
-import './FAQComp.scss';
+import "./FAQComp.scss";
 
 const FaqComp = () => {
   return (
@@ -18,8 +18,14 @@ const FaqComp = () => {
             faqData.map((val, index) => (
               <div key={index} className="content-container">
                 <div className="content">
-                  <p data-aos="fade-up" className="content-question">{val.question}</p>
-                  <p data-aos="fade-up" className="content-answer">{val.answer}</p>
+                  <p data-aos={(faqData.length === index + 1) ? null : "fade-up"}
+                     className="content-question">{val.question}</p>
+                  {
+                    val.answer.map((item, itemKey) => (
+                      <p key={itemKey} data-aos={(faqData.length === index + 1) ? null : "fade-up"}
+                         className="content-answer">{item}</p>
+                    ))
+                  }
                 </div>
                 {
                   (index === faqData.length - 1) && (
