@@ -6,7 +6,7 @@ import "./RoadmapComp.scss";
 
 const RoadmapComp = () => {
   return (
-    <Container fluid className="roadmap-comp comp-height">
+    <Container fluid className="roadmap-comp">
       <Container className="roadmap-comp-container">
         <Row className="roadmap-comp-title">
           <h6 data-aos="fade-down" className="title">utility road map</h6>
