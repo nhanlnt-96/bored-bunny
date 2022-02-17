@@ -1,6 +1,6 @@
 import React from "react";
 import {Col, Container, Row} from "react-bootstrap";
-import IntroducingImg from "../../assets/imgs/introducingImg.webp";
+import IntroducingImg from "../../assets/imgs/introducingImg.png";
 
 import "./IntroducingComp.scss";
 
